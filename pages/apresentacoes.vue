@@ -37,14 +37,19 @@
 
   <main class="presentation-principal-form">
     <div class="presentation-form">
-      <h1 class="presentation-title">GERAÇÕES SOCIAIS E EXPECTATIVAS DE FUTURO NO BRASIL DURANTE A PANDEMIA: ANÁLISE DE
+      
+      <div class="presentation-info-global">
+        <h1 class="presentation-title">GERAÇÕES SOCIAIS E EXPECTATIVAS DE FUTURO NO BRASIL DURANTE A PANDEMIA: ANÁLISE DE
         DADOS DO DATAFOLHA COM LINGUAGEM R</h1>
-      <div class="horizontal-line"></div>
-      <div class="presentation-info-about">
-        <h4 class="main-presentation-autors">Por: Vitor Melo</h4>
-        <h4 class="place-presentation">XIII CONNEPI - 2022</h4>
+        <div class="horizontal-line"></div>
+        <div class="presentation-info-about">
+          <h4 class="main-presentation-autors">Por: Vitor Melo</h4>
+          <h4 class="place-presentation">XIII CONNEPI - 2022</h4>
+        </div>
       </div>
-      <p class="presentation-text-first">
+
+      <div class="main-content">
+        <p class="presentation-text-first">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
         sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis
         imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh,
@@ -67,8 +72,7 @@
         amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
         fringilla, mattis ligula consectetur, ultrices mauris.
       </p>
-
-
+      </div>
     </div>
 
     <div class="other-presentations">
@@ -156,17 +160,23 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap');
 
 body {
   font-family: 'Inter', Sans-Serif;
+  font-weight: 800;
   margin: 0 auto;
 }
 
-main {
-  margin: 70px 250px 40px 250px;
+.presentation-info-global {
+  margin: 70px 500px 70px 500px;
 }
+
+.main-content {
+  font-size: 1.3rem;
+  margin: 50px 500px 50px 500px;
+}
+
 
 .home-text {
   font-size: 1.3rem;
@@ -219,6 +229,7 @@ header {
 .navbar-principal {
   display: flex;
   gap: 30px;
+  font-weight: 500;
   justify-content: center;
   padding: 10px 0px 10px 0px;
   background-color: #16C551;
@@ -242,6 +253,10 @@ header {
 }
 
 .presentation-text-first {
+  margin: 40px 0px 40px 0px;
+  line-height: 1.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   text-align: justify;
 }
 
@@ -259,20 +274,21 @@ header {
 }
 
 .img-graph {
-  width: 100%;
+  width: 75%;
 }
 
 .other-presentations-all-cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  text-align: start;
+  text-align: center;
   gap: 45px;
-  margin: 0 auto;
+  margin: 50px 500px 50px 500px;
 }
 
 .card-title {
   font-size: 1.6rem;
-  margin: 40px 0px 60px 0px; 
+  margin: 50px 500px 50px 500px;
 }
 
 .other-presentations-main-img {
