@@ -1,40 +1,5 @@
 <template>
-  <header>
-    <div class="home-scope">
-      <div class="image-icons">
-        <img src="/initialPageIcon.png" alt="">
-      </div>
-      <p class="home-text">HOME</p>
-    </div>
-
-
-    <div class="image-logo-search">
-      <img src="/logoif.png" alt="">
-    </div>
-
-    <div class="search-scope">
-      <div class="image-icons">
-        <img src="/icons8-pesquisar-48.png" alt="">
-      </div>
-      <input v-model="text" class="input-model">
-    </div>
-  </header>
-
-  <nav class="navbar-principal">
-    <NuxtLink to="/" class="n-link-base">
-      QUEM SOMOS?
-    </NuxtLink>
-    <NuxtLink to="/" class="n-link-base">
-      APRESENTAÇÕES EM EVENTOS
-    </NuxtLink>
-    <NuxtLink to="/" class="n-link-base">
-      PUBLICAÇÕES
-    </NuxtLink>
-    <NuxtLink to="/" class="n-link-base">
-      CONTATO
-    </NuxtLink>
-  </nav>
-
+  <GlobalHeaderNav />
   <main class="presentation-principal-form">
     <div class="presentation-form">
       
@@ -156,6 +121,8 @@
 </template>
 
 <script setup>
+import GlobalHeaderNav from '~~/components/globalHeaderNav.vue';
+
 
 </script>
 
